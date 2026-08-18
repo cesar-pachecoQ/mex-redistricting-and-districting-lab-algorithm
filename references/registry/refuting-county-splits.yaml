@@ -1,0 +1,24 @@
+id: refuting-county-splits
+title: A widespread belief about county splits in political districting plans is wrong
+source_url: https://github.com/AustinLBuchanan/refuting_a_widespread_belief_about_county_splits.git
+commit: c179753d1223c9fd4beb85dbaa5b7ea5ed33afc6
+license: GPL-3.0
+checkout_path: references/repos/refuting_a_widespread_belief_about_county_splits
+purpose: Reproducir y estudiar una formulacion exacta para planes de distritacion y county splits.
+upstream_layout:
+  code: src/
+  data: dat/
+  notebooks: src/*.ipynb
+requirements:
+  python: "3.12"
+  packages:
+    - geopandas>=1
+    - jupyterlab>=4
+    - networkx>=3
+  optional_packages:
+    - gurobipy>=12
+constraints:
+  - Requiere una instalacion y licencia funcional de Gurobi para ejecutar el algoritmo.
+  - Los notebooks usan rutas de Windows y pueden requerir ajustes locales para ejecutarse en Linux.
+  - Sus datos representan condados de Estados Unidos; no son insumos del pipeline mexicano.
+integration_status: external_only

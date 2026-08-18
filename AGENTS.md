@@ -10,3 +10,4 @@
 - `data/raw/` si se versiona; `data/interim/` y `data/processed/` no deben commitearse.
 - `src/redistricting_lab/solvers/` es para envoltorios de algoritmos; `evaluation/` para metricas; `visualization/` para mapas y salidas graficas.
 - Mantén la separacion entre logica de solver, preparacion de datos y reportes. No mezcles mapas o metricas dentro del solver.
+- `references/` es un espacio aislado para reproducir proyectos de terceros: no importes su codigo desde `src/` ni conectes sus salidas a los pipelines oficiales sin una adaptacion explicita.

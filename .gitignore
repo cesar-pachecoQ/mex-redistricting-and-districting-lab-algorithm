@@ -14,3 +14,6 @@ data/interim/
 data/processed/
 reports/generated/
 reports/figures/
+references/repos/
+references/runs/
+references/adaptations/*/work/
