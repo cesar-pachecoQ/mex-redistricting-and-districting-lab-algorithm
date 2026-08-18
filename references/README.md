@@ -8,13 +8,15 @@ Este directorio permite estudiar, ejecutar y reproducir proyectos de terceros si
 - Cada checkout tiene su propio `.venv`; no modifica `pyproject.toml`, `uv.lock` ni `.venv` del proyecto principal.
 - Las salidas externas van a `runs/`, tambien ignorado por Git.
 - El codigo externo no se importa desde `src/` ni alimenta mapas, reportes o metricas oficiales.
-- Una idea se integra solo despues de documentarla en `adaptations/` y reimplementarla con las interfaces propias del proyecto.
+- Las adaptaciones y mejoras estan inspiradas en el codigo original, pero no son una copia literal, sino modificaciones para comprenderlo o poder correrlo
+- Una idea se integra solo despues de documentarla en `final_adaptations/` y reimplementarla con las interfaces propias del proyecto.
 
 ## Directorios versionados
 
 - `registry/`: origen, commit fijado, licencia, dependencias y alcance de cada referencia.
 - `setup_references.sh`: clonacion y preparacion reproducible de los checkouts definidos.
-- `adaptations/`: notas metodologicas y adaptaciones propias; no copias del codigo externo.
+- `adaptations/`: notas metodologicas y adaptaciones temporales o experimentales; no copias del codigo externo.
+- `final_adaptations/`: notas metodologicas y adaptaciones propias; no copias del codigo externo.
 
 ## Preparar referencias
 
@@ -35,7 +37,8 @@ INSTALL_GUROBI=1 bash references/setup_references.sh
 ## Flujo de integracion
 
 1. Reproducir el proyecto externo en su checkout aislado.
-2. Registrar hallazgos y compatibilidad en `adaptations/<referencia>/`.
-3. Diseñar un adaptador para los datos y contratos de `redistricting_lab`.
-4. Reimplementar el algoritmo en `src/redistricting_lab/solvers/`.
-5. Solo entonces habilitar sus resultados para evaluacion, mapas y reportes oficiales.
+2. Modifcar y adaptar los algoritmos con fines de reproducibilidad y compatibilidad, asi como su mejor entendimiento en `adaptations/<referencia>/`.
+3. Diseñar un adaptador para los datos y contratos de `redistricting_lab` para adaptar el algoritmo a datos mexicanos.
+4. Registrar hallazgos y compatibilidad en `final_adaptations/<referencia>/`.
+5. Reimplementar el algoritmo en `src/redistricting_lab/solvers/`.
+6. Solo entonces habilitar sus resultados para evaluacion, mapas y reportes oficiales.
