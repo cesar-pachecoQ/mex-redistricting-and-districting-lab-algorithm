@@ -1,0 +1,18 @@
+id,nombre,cluster,distritos_en_cluster,estado,distritos_interiores,distritos_frontera
+1,BALANCAN,0,1,entero,0,1
+17,TENOSIQUE,0,1,entero,0,1
+2,CARDENAS,1,4,fraccionado,2,1
+8,HUIMANGUILLO,1,4,fraccionado,1,1
+3,CENTLA,2,3,fraccionado,1,1
+13,NACAJUCA,2,3,fraccionado,1,1
+14,PARAISO,2,3,entero,0,1
+4,CENTRO,3,6,entero,6,0
+5,COMALCALCO,4,2,entero,2,0
+6,CUNDUACAN,5,2,fraccionado,1,1
+10,JALPA DE MENDEZ,5,2,entero,0,1
+7,EMILIANO ZAPATA,6,2,entero,0,1
+9,JALAPA,6,2,entero,0,1
+11,JONUTA,6,2,entero,0,1
+12,MACUSPANA,6,2,fraccionado,1,1
+15,TACOTALPA,7,1,entero,0,1
+16,TEAPA,7,1,entero,0,1

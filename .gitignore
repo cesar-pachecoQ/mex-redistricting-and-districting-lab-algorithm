@@ -1,19 +1,83 @@
+# Python environments and caches
 .venv/
+venv/
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*$py.class
+.python-version.local
+.tox/
+.nox/
+.hypothesis/
+.cache/
+
+# Test, lint and coverage artifacts
 .ruff_cache/
 .pytest_cache/
 .mypy_cache/
 .coverage
+.coverage.*
+coverage.xml
 htmlcov/
+
+# Packaging artifacts
 dist/
 build/
 *.egg-info/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.*
+gurobi.lic
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+tmp/
+
+# Local notes and assistant instructions
+**/AGENTS.md
+AGENTS.local.md
+init.md
+notes/
+scratch/
+private-specs/
+docs/internal/
+data/raw/deep-research-report.md
+
+# Solver artifacts generated during experiments
+*.lp
+*.mps
+*.sol
+*.mst
+
+# Generated datasets and reports
 data/interim/
 data/processed/
 reports/generated/
 reports/figures/
+
+# Isolated third-party reference work
 references/repos/
 references/runs/
 references/adaptations/*/work/

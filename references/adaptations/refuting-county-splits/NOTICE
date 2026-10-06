@@ -1,0 +1,7 @@
+Adaptación modificada de refuting_a_widespread_belief_about_county_splits.
+Autores del trabajo original: Austin Buchanan, Soraya Ezazipour y Maral Shahmizad.
+Repositorio original: https://github.com/AustinLBuchanan/refuting_a_widespread_belief_about_county_splits
+Licencia original: GNU General Public License, versión 3 (GPL-3.0-only).
+Esta adaptación reemplaza Gurobi por PuLP y añade carga JSON, evaluación,
+separadores iterativos, serialización y tests sintéticos. No representa al
+proyecto ni a los autores originales.

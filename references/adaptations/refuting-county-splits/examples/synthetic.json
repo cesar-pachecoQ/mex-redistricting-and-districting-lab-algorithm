@@ -1,0 +1,17 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {"id": 0, "TOTPOP": 1, "boundary_node": true, "boundary_perim": 3, "area": 1},
+    {"id": 1, "TOTPOP": 1, "area": 1},
+    {"id": 2, "TOTPOP": 1, "area": 1},
+    {"id": 3, "TOTPOP": 1, "boundary_node": true, "boundary_perim": 3, "area": 1}
+  ],
+  "adjacency": [
+    [{"id": 1, "shared_perim": 2}],
+    [{"id": 0, "shared_perim": 2}, {"id": 2, "shared_perim": 2}],
+    [{"id": 1, "shared_perim": 2}, {"id": 3, "shared_perim": 2}],
+    [{"id": 2, "shared_perim": 2}]
+  ]
+}
